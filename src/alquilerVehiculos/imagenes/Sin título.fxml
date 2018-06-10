@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="301.0" prefWidth="367.0" stylesheets="@../mvc/vista/iugraficatablas/iugtablas.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tallermecanico.mvc.vista.iugraficatablas.controladoresvista.ControladorAnadirVehiculoCliente">
+   <children>
+      <GridPane hgap="10.0" vgap="10.0">
+         <children>
+            <Label alignment="TOP_CENTER" text="DNI Cliente:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="Matricula:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label text="Marca:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Label text="Modelo:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <Label text="Num Plazas" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Label text="Cilindrada:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+            <TextField fx:id="tfDni" disable="true" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfMatricula" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfMarca" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfModelo" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfColor" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tfCilindrada" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="TIPO " textFill="#3f3786" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="cbTipo" prefHeight="26.0" prefWidth="215.0" GridPane.columnIndex="1" />
+            <Label text="PMA" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="104.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="217.0" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="54.0" prefWidth="358.0" spacing="20.0">
+         <children>
+            <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+            <Button fx:id="btAnadir" mnemonicParsing="false" onAction="#anadirVehiculoCliente" text="Añadir" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
